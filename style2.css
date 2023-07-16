@@ -39,6 +39,7 @@ h1{
     color: #8800ff;
     text-align: center;
     font-size: 350%;
+	padding-top: 20%;
 }
 @keyframes ex {
 	0% {
@@ -52,7 +53,7 @@ h1{
 	}
 }
 h2{
-    animation: ex 4s ease 0s 1 normal forwards;
+    animation: ex 3s ease 0s 1 normal forwards;
     color: antiquewhite;
     text-align: center;
 }
@@ -138,21 +139,62 @@ div{
 div{
 	display: flex;
 }
-@keyframes ol {
+.des{
+	text-align: center;
+	font-size: 300%;
+	margin-top: 10%;
+}
+.des1{
+	text-align: center;
+	font-size: 100%;
+}
+@keyframes off {
 	0% {
 		opacity: 0;
+		transform: translateX(-250px);
 	}
 
 	100% {
 		opacity: 1;
+		transform: translateX(0);
 	}
 }
-	
-.ol{
-	animation: ol 6s ease 0s 1 normal forwards;
-	margin: auto;
+.off{
+	font-size: 150%;
+	color: #8800ff;
+	text-align: center;
+	animation: off 4s ease 0s 1 normal forwards;
 }
-.ol1{
-	animation: ol 6s ease 0s 1 normal forwards;
-	margin: auto;
+	
+
+.of {
+	font-size: 150%;
+	color: #8800ff;
+	text-align: center;
+	padding: auto;
+	
+}
+
+.o{
+	font-size: 150%;
+	color: #8800ff;
+	text-align: center;
+	padding-right: 10%;
+	animation: myAnim 4s ease 0s 1 normal forwards;
+}
+@keyframes bird {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+}
+.gif{
+    animation: bird 3s ease 0s 1 normal forwards;
+    text-align: center;
+   
 }
