@@ -1,0 +1,157 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Tektur', cursive;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 18px;
+    margin: 0 10px;
+}
+a {
+    color: #fff; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #8800ff; /* Изменение цвета текста при наведении */
+}
+
+/* Стили для ссылок в навигационном меню */
+nav ul li a {
+    padding: 10px; /* Внутренние отступы */
+}
+
+
+h1{
+    color: #8800ff;
+    text-align: center;
+    font-size: 350%;
+}
+@keyframes ex {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+}
+h2{
+    animation: ex 4s ease 0s 1 normal forwards;
+    color: antiquewhite;
+    text-align: center;
+}
+@keyframes ex1 {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes lox {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.lox{
+       animation: lox 4s ease 0s 1 normal forwards;
+	   font-size: 24px;
+     
+       
+}
+
+@keyframes YourAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.lox1{
+    animation: YourAnim 4s ease 0s 1 normal forwards;
+	padding-top: 20%;
+    float: right;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+h5{
+	
+	animation: myAnim 6s ease 0s 1 normal forwards;
+    color: #fff;
+    text-align: center;
+	font-size: 200%;
+}
+div{
+	display: flex;
+}
+.text{
+	animation: myAnim 6s ease 0s 1 normal forwards;
+	text-align: start;
+	margin-left: 20%;
+	font-size: 200%;
+}
+
+
+.text1{
+	animation: myAnim 6s ease 0s 1 normal forwards;
+	font-size: 200%;
+	margin-left: 50%;
+}
+
+div{
+	display: flex;
+}
+@keyframes ol {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+	
+.ol{
+	animation: ol 6s ease 0s 1 normal forwards;
+    margin-left: 13%;
+}
+.ol1{
+	animation: ol 6s ease 0s 1 normal forwards;
+	margin-left: 35%;
+}
