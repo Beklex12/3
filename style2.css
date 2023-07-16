@@ -37,7 +37,7 @@ nav ul li a {
 
 h1{
     color: #8800ff;
-    text-align: center;
+    padding-left: 10%;
     font-size: 350%;
 	padding-top: 20%;
 }
@@ -55,7 +55,7 @@ h1{
 h2{
     animation: ex 3s ease 0s 1 normal forwards;
     color: antiquewhite;
-    text-align: center;
+    
 }
 @keyframes ex1 {
 	0% {
@@ -115,7 +115,7 @@ h5{
 	
 	animation: myAnim 6s ease 0s 1 normal forwards;
     color: #fff;
-    text-align: center;
+   padding-left: 10%;
 	font-size: 200%;
 }
 div{
@@ -142,7 +142,6 @@ div{
 .des{
 	text-align: center;
 	font-size: 300%;
-	margin-top: 10%;
 }
 .des1{
 	text-align: center;
@@ -162,7 +161,7 @@ div{
 .off{
 	font-size: 150%;
 	color: #8800ff;
-	text-align: center;
+	padding-left: 10%;
 	animation: off 4s ease 0s 1 normal forwards;
 }
 	
@@ -182,19 +181,28 @@ div{
 	padding-right: 10%;
 	animation: myAnim 4s ease 0s 1 normal forwards;
 }
-@keyframes bird {
+
+.gif{
+    
+	text-align: center;
+   
+}
+@keyframes error {
 	0% {
-		opacity: 1;
-		transform: translateX(0);
+		opacity: 0;
+		transform: scale(0.6);
 	}
 
 	100% {
-		opacity: 0;
-		transform: translateX(50px);
+		opacity: 1;
+		transform: scale(1);
 	}
 }
-.gif{
-    animation: bird 3s ease 0s 1 normal forwards;
+.gif2{
+    animation: error 3s ease 0s 1 normal forwards;
     text-align: center;
-   
 }
+.iu{
+	display: flex;
+}
+
