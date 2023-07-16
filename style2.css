@@ -122,16 +122,17 @@ div{
 }
 .text{
 	animation: myAnim 6s ease 0s 1 normal forwards;
-	text-align: start;
-	margin-left: 20%;
+    color: #fff;
+    text-align: center;
 	font-size: 200%;
 }
 
 
 .text1{
 	animation: myAnim 6s ease 0s 1 normal forwards;
+    color: #fff;
+    text-align: center;
 	font-size: 200%;
-	margin-left: 50%;
 }
 
 div{
@@ -149,9 +150,9 @@ div{
 	
 .ol{
 	animation: ol 6s ease 0s 1 normal forwards;
-    margin-left: 13%;
+    margin: auto;
 }
 .ol1{
 	animation: ol 6s ease 0s 1 normal forwards;
-	margin-left: 35%;
+	margin: auto;
 }
