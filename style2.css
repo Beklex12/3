@@ -11,7 +11,7 @@ body, html {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: purple;
+	background-color: 3b0456;
 	position: absolute;
 	animation: moveBall linear infinite;
   }
