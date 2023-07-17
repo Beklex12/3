@@ -273,5 +273,15 @@ div{
   .link{
     padding-top: 1%;
   }
-  
+  .fa-brands {
+    padding-right: 5%;
+    padding-top: 1%;
+  }
+  .fa-solid{
+    padding-top: 1%;
+    padding-left: 5%;
+  }
+  .fa-regular{
+    padding-top: 1%;
+  }
   
