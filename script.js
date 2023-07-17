@@ -1,47 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const balls = document.querySelectorAll(".ball");
-  
-    balls.forEach(ball => {
-      moveBall(ball);
-    });
+  const balls = document.querySelectorAll(".ball");
+
+  balls.forEach(ball => {
+    moveBall(ball);
   });
-  
-  function moveBall(ball) {
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    const ballWidth = ball.offsetWidth;
-    const ballHeight = ball.offsetHeight;
-  
-    function getRandomAngle() {
-      return Math.random() * 2 * Math.PI;
+});
+
+function moveBall(ball) {
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
+  const ballWidth = ball.offsetWidth;
+  const ballHeight = ball.offsetHeight;
+
+  let posX = Math.random() * (screenWidth - ballWidth);
+  let posY = Math.random() * (screenHeight - ballHeight);
+  let velX = Math.random() * 4 - 2; // Random horizontal velocity between -2 and 2
+  let velY = Math.random() * 4 - 2; // Random vertical velocity between -2 and 2
+
+  function updatePosition() {
+    posX += velX;
+    posY += velY;
+
+    // Bounce off the screen edges
+    if (posX + ballWidth > screenWidth || posX < 0) {
+      velX *= -1;
     }
-  
-    function getRandomSpeed() {
-      return 1 + Math.random() * 3; // Adjust the speed range as needed
+    if (posY + ballHeight > screenHeight || posY < 0) {
+      velY *= -1;
     }
-  
-    let posX = Math.random() * (screenWidth - ballWidth);
-    let posY = Math.random() * (screenHeight - ballHeight);
-  
-    let angle = getRandomAngle();
-    let speed = getRandomSpeed();
-  
-    function updatePosition() {
-      posX += speed * Math.cos(angle);
-      posY += speed * Math.sin(angle);
-  
-      // Wrap the balls around the screen edges
-      if (posX > screenWidth) posX = -ballWidth;
-      if (posX < -ballWidth) posX = screenWidth;
-      if (posY > screenHeight) posY = -ballHeight;
-      if (posY < -ballHeight) posY = screenHeight;
-  
-      ball.style.left = `${posX}px`;
-      ball.style.top = `${posY}px`;
-  
-      requestAnimationFrame(updatePosition);
-    }
-  
-    updatePosition();
+
+    ball.style.left = `${posX}px`;
+    ball.style.top = `${posY}px`;
+
+    requestAnimationFrame(updatePosition);
   }
-  
+
+  updatePosition();
+}
