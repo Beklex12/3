@@ -5,6 +5,7 @@ body, html {
 	height: 100%;
 	overflow: hidden;
 	background-color: black; /* Фон черного цвета */
+	cursor: url("cursor2.png"), auto;
   }
   
   .ball {
@@ -269,6 +270,8 @@ div{
       transform: translate(100vw, 100vh);
     }
   }
-  
+  .link{
+    padding-top: 1%;
+  }
   
   
