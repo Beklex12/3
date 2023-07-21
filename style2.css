@@ -186,7 +186,7 @@ div{
 	}
 }
 .off{
-	font-size: 150%;
+	font-size: 100%;
 	color: #8800ff;
 	padding-left: 10%;
 	animation: off 4s ease 0s 1 normal forwards;
@@ -284,4 +284,10 @@ div{
   .fa-regular{
     padding-top: 1%;
   }
-  
+  .black-section {
+	background-color: black;
+	height: 200vh; /* Занимаем всю высоту видимой области */
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll; /* Добавим прокрутку при превышении высоты видимой области */
+  }
